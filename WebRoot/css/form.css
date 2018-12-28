@@ -1,0 +1,38 @@
+.tableForm {
+	width: 100%;
+	border-collapse:collapse;
+}
+
+.tableForm th {
+	text-align: right;
+	padding: 8px 0px 8px 0px;
+}
+
+.tableForm td {
+	text-align: left;
+	padding: 5px 0px 5px 0px;
+}
+
+.tableForm input {
+	width: 96%;
+}
+
+.tableForm textarea {
+	width: 96%;
+}
+
+.logo {
+	background: url('../images/logo.jpg') no-repeat;
+}
+
+.info {
+	background: #FFFEE6;
+	color: #8F5700;
+	padding: 14px;
+}
+
+.tip {
+	width: 24px;
+	height: 16px;
+	float: left;
+}

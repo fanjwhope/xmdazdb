@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<jsp-property-group>
+		<el-ignored>false</el-ignored>
+	</jsp-property-group>
+
+	<!-- webservice框架配置开始 -->
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>org.apache.axis.transport.http.AdminServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis.transport.http.AxisServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<servlet-class>org.apache.axis.monitor.SOAPMonitorService</servlet-class>
+		<init-param>
+			<param-name>SOAPMonitorPort</param-name>
+			<param-value>5001</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<url-pattern>/SOAPMonitor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/servlet/AdminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+	<!-- webservice框架配置结束 -->
+
+	<!-- 公用部分的配置 开始 -->
+	<filter>
+		<filter-name>codingFilter</filter-name>
+		<filter-class>com.hr.global.util.CodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>codingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- <filter>
+		<filter-name>notSqlFilter</filter-name>
+		<filter-class>com.hr.filter.NotSqlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>notSqlFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>  -->
+	<filter>
+		<filter-name>notLoginFilter</filter-name>
+		<filter-class>com.hr.filter.NotLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>notLoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>picture</servlet-name>
+		<servlet-class>com.hr.global.util.PictureSer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>picture</servlet-name>
+		<url-pattern>/picture</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>singleFileUpload</servlet-name>
+		<servlet-class>com.hr.global.util.SingleFileUploadSer</servlet-class>
+		<init-param>
+			<param-name>defaultDir</param-name>
+			<param-value>/uploadFile/</param-value>
+		</init-param>
+		<!-- 允许的文件大小最大值，单位MB -->
+		<init-param>
+			<param-name>fileMaxSize</param-name>
+			<param-value>15</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>singleFileUpload</servlet-name>
+		<url-pattern>/singleFileUpload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>do</servlet-name>
+		<servlet-class>com.hr.servlet.BaseServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>loginDo</servlet-name>
+    <servlet-class>com.hr.action.LoginDo</servlet-class>
+  </servlet>
+
+	<servlet-mapping>
+		<servlet-name>do</servlet-name>
+		<url-pattern>/do/*</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginDo</servlet-name>
+    <url-pattern>/loginDo</url-pattern>
+  </servlet-mapping>
+	<!-- 公用部分的配置结束 -->
+
+</web-app>

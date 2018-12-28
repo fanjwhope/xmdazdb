@@ -1,0 +1,16 @@
+<dwr>
+  <allow>
+    <create creator="new" javascript="OAAjax">
+      <param name="class" value="com.hr.oa.ajax.OAAjax"/>       
+    </create>
+    <create creator="new" javascript="OCXUPLoadFile">
+      <param name="class" value="com.hr.util.OCXUPLoadFile"/>       
+    </create>
+  </allow>   
+  <signatures>
+  <![CDATA[  
+  OAAjax.buildSendHTML(Map<String, String>,int,int,int,int,int);  
+  OCXUPLoadFile.init(Map<String, String>);  
+  ]]>
+  </signatures>
+</dwr>

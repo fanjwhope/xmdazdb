@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+	<series>
+		<value xid="0">00</value>
+		<value xid="1">01</value>
+		<value xid="2">02</value>
+		<value xid="3">03</value>
+		<value xid="4">04</value>
+		<value xid="5">05</value>
+		<value xid="6">06</value>
+		<value xid="7">07</value>
+		<value xid="8">08</value>
+		<value xid="9">09</value>
+		<value xid="10">10</value>
+		<value xid="11">11</value>
+		<value xid="12">12</value>
+		<value xid="13">13</value>
+		<value xid="14">14</value>
+		<value xid="15">15</value>
+		<value xid="16">16</value>
+		<value xid="17">17</value>
+		<value xid="18">18</value>
+		<value xid="19">19</value>
+		<value xid="20">20</value>
+		<value xid="21">21</value>
+		<value xid="22">22</value>
+		<value xid="23">23</value>
+		<value xid="24">24</value>
+	</series>
+	<graphs>
+		<graph gid="1">
+		<value xid="0">2</value>
+		<value xid="1">3</value>
+		<value xid="2">4</value>
+		<value xid="3">5</value>
+		<value xid="4">6</value>
+		<value xid="5">7</value>
+		<value xid="6">8</value>
+		<value xid="7">9</value>
+		<value xid="8">10</value>
+		<value xid="9">13</value>
+		<value xid="10">16</value>
+		<value xid="11">2</value>
+		<value xid="12">2</value>
+		<value xid="13">1</value>
+		<value xid="14">4</value>
+		<value xid="15">5</value>
+		<value xid="16">3</value>
+		<value xid="17">2</value>
+		<value xid="18">2</value>
+		<value xid="19">1</value>
+		<value xid="20">100</value>
+		<value xid="21">123</value>
+		<value xid="22">21</value>
+		<value xid="23">22</value>
+		<value xid="24">2</value>
+		</graph>
+	</graphs>
+</chart>

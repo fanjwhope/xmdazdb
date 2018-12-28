@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+  <yhdm>2</yhdm>
+  <case2>
+    <ename>Xmda</ename>
+    <cname>项目档案管理系统</cname>
+    <oa>
+      <parms>
+      	<!--公共包名 -->
+      	<parm key="packageName">com.hr.action</parm>
+      	<!--数据库模式名 -->
+      	<parm key="schema">dbo</parm>
+      	<!--超级管理员所在数据库名称 -->
+      	<parm key="basicDataBase">xmda</parm>
+      	<parm key="bankNodeTable">bankNode</parm>
+		<parm key="debugFileName">C:\Users\82421\Downloads\log</parm>
+
+        <parm key="currentDBType">2</parm>
+        <parm key="Dbserver">192.168.3.160</parm>
+        <parm key="USERNAME">highrun</parm>
+        <parm key="PASSWORD">create2002</parm>
+      <parm key="databaseName">xmdaZD</parm>  
+       <parm key="databaseName">xmda</parm>
+        <parm key="Dbport">1433</parm> 
+      <!--  <parm key="currentDBType">2</parm>
+        <parm key="Dbserver">127.0.0.1</parm>
+        <parm key="USERNAME">sa</parm>
+        <parm key="PASSWORD">sa</parm>
+        <parm key="databaseName">runAdmin</parm>
+        <parm key="Dbport">1433</parm>  -->
+
+        <parm key="sendFileType">ajax</parm>
+
+      </parms>
+    </oa>
+  </case2>
+</root>

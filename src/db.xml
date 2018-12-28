@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+    <zdbzy>
+        <Url>jdbc:sqlserver://192.168.3.160:1433; DatabaseName=xmdaZD</Url>
+ 		<Driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</Driver>
+ 		<UserName>highrun</UserName>
+ 		<PassWord>create2002</PassWord>
+ 		<InitConnectionNum>2</InitConnectionNum>
+ 		<MaxConnectionNum>3</MaxConnectionNum>      
+    </zdbzy>
+     <zdb>
+        <Url>jdbc:sqlserver://192.168.3.160:1433; DatabaseName=xmda</Url>
+ 		<Driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</Driver>
+ 		<UserName>highrun</UserName>
+ 		<PassWord>create2002</PassWord>
+ 		<InitConnectionNum>2</InitConnectionNum>
+ 		<MaxConnectionNum>3</MaxConnectionNum>      
+    </zdb>
+</root>
